@@ -2,7 +2,7 @@
   "name": "jokubasr/lithuanian-names-declension",
   "autoload": {
     "psr-0" : {
-      "JokubasR\\LithuanianNamesDeclension" : "src"
+      "JokubasR\\Bundle\\LithuanianNamesDeclension" : "src"
     }
   }
 }
