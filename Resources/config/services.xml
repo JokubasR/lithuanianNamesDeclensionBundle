@@ -4,13 +4,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
+    <parameters>
+        <parameter key="jokubasr.lithuanian_names_declension.declension.class">JokubasR\Bundle\LithuanianNamesDeclensionBundle\Service\Declension</parameter>
+    </parameters>
+
     <services>
-        <service id="jokubas_r_lithuanian_names_declension.example" class="JokubasR\Bundle\LithuanianNamesDeclensionBundle\Example">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
-        </service>
+        <service id="jokubasr.lithuanian_names_declension.declension" class="%jokubasr.lithuanian_names_declension.declension.class%" />
     </services>
-    -->
+
 </container>
