@@ -32,15 +32,15 @@ class DeclensionExtension extends \Twig_Extension
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('inflected', 'getInflected'),
-            new \Twig_SimpleFilter('case', 'getInflected'),
+            new \Twig_SimpleFilter('inflect', [$this, 'getInflected']),
+            new \Twig_SimpleFilter('case', [$this, 'getInflected']),
 
-            new \Twig_SimpleFilter('genitive', 'getGenitive'),
-            new \Twig_SimpleFilter('dative', 'getDative'),
-            new \Twig_SimpleFilter('accusative', 'getGenitive'),
-            new \Twig_SimpleFilter('ablative', 'getAblative'),
-            new \Twig_SimpleFilter('locative', 'getLocative'),
-            new \Twig_SimpleFilter('vocative', 'getVocative'),
+            new \Twig_SimpleFilter('genitive', [$this, 'getGenitive']),
+            new \Twig_SimpleFilter('dative', [$this, 'getDative']),
+            new \Twig_SimpleFilter('accusative', [$this, 'getGenitive']),
+            new \Twig_SimpleFilter('ablative', [$this, 'getAblative']),
+            new \Twig_SimpleFilter('locative', [$this, 'getLocative']),
+            new \Twig_SimpleFilter('vocative', [$this, 'getVocative']),
         ];
     }
 
@@ -50,14 +50,14 @@ class DeclensionExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('getInflected', 'getInflected'),
+            new \Twig_SimpleFunction('getInflected', [$this, 'getInflected']),
 
-            new \Twig_SimpleFunction('getGenitive', 'getGenitive'),
-            new \Twig_SimpleFunction('getDative', 'getDative'),
-            new \Twig_SimpleFunction('getAccusative', 'getGenitive'),
-            new \Twig_SimpleFunction('getAblative', 'getAblative'),
-            new \Twig_SimpleFunction('getLocative', 'getLocative'),
-            new \Twig_SimpleFunction('getVocative', 'getVocative'),
+            new \Twig_SimpleFunction('getGenitive', [$this, 'getGenitive']),
+            new \Twig_SimpleFunction('getDative', [$this, 'getDative']),
+            new \Twig_SimpleFunction('getAccusative', [$this, 'getGenitive']),
+            new \Twig_SimpleFunction('getAblative', [$this, 'getAblative']),
+            new \Twig_SimpleFunction('getLocative', [$this, 'getLocative']),
+            new \Twig_SimpleFunction('getVocative', [$this, 'getVocative']),
         ];
     }
 

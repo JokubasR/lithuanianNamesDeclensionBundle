@@ -6,10 +6,16 @@
 
     <parameters>
         <parameter key="jokubasr.lithuanian_names_declension.declension.class">JokubasR\Bundle\LithuanianNamesDeclensionBundle\Service\Declension</parameter>
+        <parameter key="jokubasr.lithuanian_names_declension.extension.class">JokubasR\Bundle\LithuanianNamesDeclensionBundle\Twig\Extension\DeclensionExtension</parameter>
     </parameters>
 
     <services>
         <service id="jokubasr.lithuanian_names_declension.declension" class="%jokubasr.lithuanian_names_declension.declension.class%" />
+
+        <service id="jokubasr.lithuanian_names_declension.extension" class="%jokubasr.lithuanian_names_declension.extension.class%">
+            <tag name="twig.extension"/>
+            <argument type="service" id="jokubasr.lithuanian_names_declension.declension"/>
+        </service>
     </services>
 
 </container>
