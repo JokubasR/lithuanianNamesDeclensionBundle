@@ -1,8 +1,21 @@
 {
   "name": "jokubasr/lithuanian-names-declension",
+  "description" : "Lithuanian names declension bundle.",
+  "authors": [
+    {
+      "name": "Jokūbas Ramanauskas",
+      "email": "jokubas.rama@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/JokubasR/lithuanianNamesDeclensionBundle",
+  "type" : "symfony-bundle",
+  "keywords" : [
+    "lithuanian names declension case bundle"
+  ],
   "autoload": {
     "psr-0" : {
-      "JokubasR\\Bundle\\LithuanianNamesDeclension" : "src"
+      "JokubasR\\Bundle\\LithuanianNamesDeclensionBundle" : "src"
     }
-  }
+  },
+  "target-dir": "JokubasR/Bundle/LithuanianNamesDeclensionBundle"
 }
