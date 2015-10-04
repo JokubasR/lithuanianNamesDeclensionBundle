@@ -69,7 +69,14 @@ Available twig functions:
 * **getLocative**
 * **getVocative**
 
+Author
+-----
+Jokūbas Ramanauskas
 
 Original library author
 -----
 Dainius Kaupaitis, 2011
+
+Contributors
+-----
+...
