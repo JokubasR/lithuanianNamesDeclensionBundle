@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-0" : {
-      "JokubasR\\Bundle\\LithuanianNamesDeclensionBundle" : "src"
+      "JokubasR\\Bundle\\LithuanianNamesDeclensionBundle" : ""
     }
   },
   "target-dir": "JokubasR/Bundle/LithuanianNamesDeclensionBundle"
