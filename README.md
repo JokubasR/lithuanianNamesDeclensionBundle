@@ -47,7 +47,8 @@ $inflected = $declension->getInflected("Jokūbas", Declension::CASE_DATIVE);
 {{ "Jokūbas"|case('ablative') }}
 
 {{ getVocative("Jokūbas") }}
-{{ getInflected("Jokūbas") }}
+{{ getInflected("Jokūbas") }} {# vocative is the default case #}
+{{ getInflected("Jokūbas", "ablative") }}
 ```
 
 Available twig filters:
