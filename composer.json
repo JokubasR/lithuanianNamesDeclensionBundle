@@ -1,6 +1,7 @@
 {
   "name": "jokubasr/lithuanian-names-declension",
   "description" : "Lithuanian names declension bundle.",
+  "license": "MIT",
   "authors": [
     {
       "name": "Jokūbas Ramanauskas",
@@ -10,12 +11,23 @@
   "homepage": "https://github.com/JokubasR/lithuanianNamesDeclensionBundle",
   "type" : "symfony-bundle",
   "keywords" : [
-    "lithuanian names declension case bundle"
+    "lithuanian",
+    "names",
+    "declension",
+    "case",
+    "bundle"
   ],
   "autoload": {
     "psr-0" : {
-      "JokubasR\\Bundle\\LithuanianNamesDeclensionBundle" : ""
+      "JokubasR\\Bundle\\LithuanianNamesDeclensionBundle": ""
     }
   },
-  "target-dir": "JokubasR/Bundle/LithuanianNamesDeclensionBundle"
+  "target-dir": "JokubasR/Bundle/LithuanianNamesDeclensionBundle",
+  "require": {
+    "php": ">=5.4.0",
+    "twig/twig": ">=1.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3"
+  }
 }
