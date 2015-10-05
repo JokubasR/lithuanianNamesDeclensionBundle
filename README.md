@@ -1,5 +1,6 @@
 LithuanianNamesDeclensionBundle
 ==================
+[![Build Status](https://travis-ci.org/JokubasR/lithuanianNamesDeclensionBundle.svg)](https://travis-ci.org/JokubasR/lithuanianNamesDeclensionBundle)
 
 The **LithuanianNamesDeclensionBundle** bundle allows you to inflect Lithuanian names from nominative case to any other.
 
